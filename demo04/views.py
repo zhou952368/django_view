@@ -100,6 +100,7 @@ def obj_to_dict(obj):
 
 def load_date(request):
     response = requests.get('https://gank.io/api/data/%E7%A6%8F%E5%88%A9/600/1')
+    # 将json数据转化为text格式
     welfare = json.loads(response.text)
     girls = []
     for obj in welfare['results']:

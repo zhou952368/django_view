@@ -26,7 +26,7 @@ $(function () {
 
         function add_hot(hot_ul) {
             let movs = result.data;
-            for (let a = 5; a < 10; a++) {
+            for (let a = 20; a < 40; a++) {
                 hot_ul
                     .append(
                         $('<li>')
@@ -55,7 +55,7 @@ $(function () {
 
         function add_will(will_ul) {
             let mov = result.data;
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 20; i++) {
                 will_ul
                     .append(
                         $('<li>')
@@ -70,9 +70,9 @@ $(function () {
                                     )
                                 .append(
                                     $('<div>').addClass('movies_desc')
-                                        .append($('<p>').text("主演:" + mov[a].actor))
-                                        .append($('<p>').text("类别:" + mov[a].type_name))
-                                        .append($('<p>').text("地区:" + mov[a].loc_name))
+                                        .append($('<p>').text("主演:" + mov[i].actor))
+                                        .append($('<p>').text("类别:" + mov[i].type_name))
+                                        .append($('<p>').text("地区:" + mov[i].loc_name))
                                 )
                             )
                             .append($('<p>').text("上映时间:" + mov[i].on_decade).addClass('will_p')
