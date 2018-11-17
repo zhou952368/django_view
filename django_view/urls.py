@@ -23,4 +23,5 @@ urlpatterns = [
     url('get/', views.req_get),
     url('Movies/', views.Movies),
     url('load/', views.load_date),
+    url('Tao/', views.Tao),
 ]

@@ -114,3 +114,7 @@ def load_date(request):
         girls.append(girl)
     Girl.objects.bulk_create(girls)
     return HttpResponse('so easy!!!!!')
+
+
+def Tao(request):
+    return render(request, 'TPP.html')
